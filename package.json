@@ -1,0 +1,11 @@
+{
+  "name": "project_youtube",
+  "version": "1.0.0",
+  "description": "a backend for youtube channel.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Chandan Yadav",
+  "license": "ISC"
+}
