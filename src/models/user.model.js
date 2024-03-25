@@ -65,9 +65,9 @@ userShema.methods.isPasswordCorrect = async function(password){
 }
 
 userShema.methods.generateAccessToken = function(){
-    jwt.sign(
+    return jwt.sign(
         {
-            _id : this.id,
+            _id : this._id,
             email : this.email,
             username : this.username,
             fullName : this.fullName
@@ -80,7 +80,7 @@ userShema.methods.generateAccessToken = function(){
 )
 }
 userShema.methods.generateRefreshToken = function(){
-    jwt.sign(
+    return jwt.sign(
         {
             _id : this.id
         },
